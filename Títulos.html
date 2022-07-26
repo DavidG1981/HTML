@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    
+    h1{text-transform: uppercase; 
+        
+    }
+    h1::before{ 
+        counter-increment: contadorh1; 
+        content: counter(contadorh1, upper-roman) ". ";
+
+    }
+
+    
+    h2{color: blue;}
+    body{counter-reset: contadorh1 ;}
+    ol{
+
+        list-style-type: lower-greek;
+    }
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    
+
+    <h1>Introducción a los Drones</h1>
+    <h2>Legislación</h2>
+    <h1>Tipos de Drones</h1>
+    <h2>Numero de hélices</h2>
+    <h3>Cuatro hélices</h3>
+    <h3>Seis hélices</h3>
+    <h1>Lista Ordenada</h1>
+    <ol> 
+        <li>Marca</li>
+        <li>Nombre</li>
+        <li>Número de hélices</li>
+        <li>Precio</li>
+        <li>Proveedor</li>
+    </ol>
+
+</body>
+</html>
