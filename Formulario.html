@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/styleForm.css">
+    <script src="JS/javascript.js"></script>
+
+
+</head>
+
+<body>
+    <form action="" name="formulario" id="formulario">
+        <p>
+            <label for="nombre">NOMBRE:</label>
+            <input type="text" id="nombre" name="nombre">
+        </p>
+
+        <p>
+            <label for="apellidos">APELLIDOS:</label>
+            <input type="text" id="apellidos" name="apellidos">
+        </p>
+
+        <p>
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni">
+        </p>
+
+        <p>
+            <label for="genero">HOMBRE:</label>
+            <input type="radio" id="hombre" name="genero" value="hombre">
+            <label for="genero">MUJER:</label>
+            <input type="radio" id="mujer" name="genero" value="mujer">
+        </p>
+
+        <p>
+
+            <label for="email">EMAIL:</label>
+            <input type="email" name="email" id="email">
+
+        </p>
+
+        <p>
+            <input type="button" value="Enviar" onclick="miprimerafuncion()">
+            <input type="button" value="Obtener Fecha" onclick="obtenerfecha()">
+        </p>
+
+
+
+    </form>
+
+    <p id="fecha"></p>
+
+    <table>
+        <thead>
+            <tr>
+                <td>NOMBRE</td>
+                <td>APELLIDOS</td>
+                <td>DNI</td>
+                <td>GÉNERO</td>
+                <td>EMAIL</td>
+            </tr>
+
+            
+        </thead>
+
+        <tbody id="cuerpoTabla">
+
+
+
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>

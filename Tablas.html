@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        th,
+        td {
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 10px;
+
+        }
+
+        th:nth-child(2),
+        td:nth-child(2) {
+            background-color: red;
+        }
+
+        tr:nth-child(even) {
+            background-color: darkgrey;
+
+        }
+
+        #recreo {
+            text-align: center;
+            letter-spacing: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+        }
+
+        #libre {
+            text-align: center;
+            text-transform: capitalize;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Horas</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>8:00</td>
+                <td>Castellano</td>
+                <td rowspan="3">Inglés</td>
+                <td>Catalán</td>
+                <td colspan="2" rowspan="2" id="libre">Libre</td>
+
+
+
+            </tr>
+
+            <tr>
+                <td>9:00</td>
+
+
+                <td>Matematicas</td>
+                <td>Castellano</td>
+
+
+
+            </tr>
+
+            <tr>
+                <td>10:00</td>
+
+
+                <td>Castellano</td>
+                <td>Catalán</td>
+                <td>Matemáticas</td>
+                <td>Gimnasia</td>
+
+
+            </tr>
+
+            <td>10:30</td>
+            <td colspan="5" id="recreo">recreo</td>
+
+            </tr>
+
+            <tr>
+                <td>11:00</td>
+                <td>Castellano</td>
+                <td>Inglés</td>
+                <td>Catalán</td>
+                <td>Matemáticas</td>
+                <td>Gimnasia</td>
+            </tr>
+
+
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+
+</html>
